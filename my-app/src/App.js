@@ -28,7 +28,7 @@ function ProductInfo(props) {
         <h1 className="Title">{title}</h1>
         <p className="Price">IDR 73.309.999</p>
         <p className="Info">
-          One of the most recognizable shoes in the Nike collection, The Air Unknown features lightweight, visible cushioning just like the original from '88. Signature details and materials celebrate the game-changing icon.
+          One of the mosat recognizable shoes in the Nike collection, The Air Unknown features lightweight, visible cushioning just like the original from '88. Signature details and materials celebrate the game-changing icon.
         </p>
       </div>  
     </div>
