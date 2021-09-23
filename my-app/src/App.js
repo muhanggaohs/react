@@ -30,6 +30,7 @@ function ProductInfo(props) {
         <p className="Info">
           One of the mosat recognizable shoes in the Nike collection, The Air Unknown features lightweight, visible cushioning just like the original from '88. Signature details and materials celebrate the game-changing icon.
         </p>
+        <a href="#">Add to Cart</a>
       </div>  
     </div>
   );
