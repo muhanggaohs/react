@@ -40,6 +40,10 @@ function CheckDiscount(props) {
 
 function ProductInfo(props) {
   const { category, title, isDiscount } = props;
+  const benefits = ["Water Resistance", "Limited", "Eye Catching"];
+  const listBenefits = benefits.map((itemBenefits) =>
+      <li>{itemBenefits}f</li>
+    );
   return (
     <div>
       <div className="Deskripsi">
@@ -50,6 +54,9 @@ function ProductInfo(props) {
         <p className="Info">
           One of the mosat recognizable shoes in the Nike collection, The Air Unknown features lightweight, visible cushioning just like the original from '88. Signature details and materials celebrate the game-changing icon.
         </p>
+        <ul>
+          <li>{listBenefits}</li>
+        </ul>
         <a onClick={(e) => AddCart(title, e)} href="#">Add to Cart</a>
       </div>  
     </div>
