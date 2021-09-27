@@ -1,6 +1,6 @@
 import React from"react";
 import Fade from 'react-reveal/Fade';
-import Button from"assets/elements/Section";
+import Section from"assets/elements/Section";
 import Header from 'assets/parts/Header';
 
 import HeroImage from 'assets/images/hero-image.png';
@@ -9,7 +9,7 @@ export default function Homepage() {
         <div classNameName="body-wrap">
             <Header></Header>
             <main classNameName="site-content">
-                <section classNameName="hero illustration-section-01" isCenteredContent>
+                <Section classNameName="hero illustration-section-01" isCenteredContent>
                     <div className="container-sm">
 						<div className="hero-inner section-inner">
 							<div className="hero-content">
@@ -51,7 +51,7 @@ export default function Homepage() {
 							</div>
 						</div>
 					</div>
-                </section>
+                </Section>
             </main>
         </div>
     );
