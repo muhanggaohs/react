@@ -6,7 +6,7 @@ export default function Card(props) {
     className.push(props.className)
     return (
         <div className={className.join(" ")}>
-            <div className={` ${props.hasShadow ? " has-shadow" : ""}`}>
+            <div className={`tiles-item-inner ${props.hasShadow ? " has-shadow" : ""}`}>
                 {props.children}
             </div>
         </div>
