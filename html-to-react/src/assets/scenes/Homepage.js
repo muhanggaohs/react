@@ -2,9 +2,34 @@ import React from"react";
 import Fade from 'react-reveal/Fade';
 import Section from"assets/elements/Section";
 import Header from 'assets/parts/Header';
+import Clients from "assets/parts/Clients";
+import Feature from "assets/parts/Feature";
 
 import HeroImage from 'assets/images/hero-image.png';
+import FeatureTile01 from 'assets/images/feature-tile-icon-01.svg';
+import FeatureTile02 from 'assets/images/feature-tile-icon-02.svg';
+import FeatureTile03 from 'assets/images/feature-tile-icon-03.svg';
 export default function Homepage() {
+    const feature = [
+        {
+            imgSrc: FeatureTile01,
+            imgAlt: "Feature Tile Icon 01",
+            title: "Join The System",
+            desc: "A pseudo-Latin text used in web design, layout, and printing in place of things to emphasise design."
+        },
+        {
+            imgSrc: FeatureTile02,
+            imgAlt: "Feature Tile Icon 02",
+            title: "Join The System02",
+            desc: "A pseudo-Latin text used in web design, layout, and printing in place of things to emphasise design."
+        },
+        {
+            imgSrc: FeatureTile03,
+            imgAlt: "Feature Tile Icon 03",
+            title: "Join The System03",
+            desc: "A pseudo-Latin text used in web design, layout, and printing in place of things to emphasise design."
+        }
+    ]
     return (
         <div classNameName="body-wrap">
             <Header></Header>
@@ -51,6 +76,18 @@ export default function Homepage() {
 							</div>
 						</div>
 					</div>
+                </Section>
+                <Clients></Clients>
+                <Section className="features-style">
+                    <div className="container">
+                        <div className="features-tiles-inner section-inner">
+                            <div className="tiles-wrap">
+                                {
+                                    feature.map(( feature, index) => <Feature delayInMS={2500} data={feature}></Feature>)
+                                }  
+                            </div>
+                        </div>
+                    </div>
                 </Section>
             </main>
         </div>
