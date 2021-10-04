@@ -5,6 +5,7 @@ import Section from"assets/elements/Section";
 import Header from 'assets/parts/Header';
 import Clients from "assets/parts/Clients";
 import Feature from "assets/parts/Feature";
+import Footer from "assets/parts/Footer";
 import Card from "assets/elements/Card";
 import Lists from "assets/elements/Lists";
 import HeroImage from 'assets/images/hero-image.png';
@@ -194,6 +195,7 @@ export default function Homepage() {
                     </div>
                 </Section>
             </main>
+            <Footer></Footer>
         </div>
     );
 }
